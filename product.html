@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sản Phẩm</title>
+    <link href="./plugins/bootstrap@5.2.1/css/bootstrap.css" rel="stylesheet">
+    <link href="./plugins/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <link href="./styles/home.css" rel="stylesheet">
+    <link href="./styles/common.css" rel="stylesheet">
+    <link href="./styles/product.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <section class="desktop fixed-top bg-white shadow">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg sticky-top bg-white d-flex justify-content-around">
+                <a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt="logo" class="img-fluid"></a>
+                <ul class="nav">
+                    <li class="nav-item pr-4 fw-bold"><a href="index.html" class="nav-link link-dark px-2 active" aria-current="page">Trang Chủ</a></li>
+                    <li class="nav-item px-4 fw-bold"><a href="#" class="nav-link link-dark px-2">Dịch Vụ</a></li>
+                    <li class="nav-item px-4 fw-bold"><a href="#" class="nav-link link-dark px-2">Dự Án Hoàn Thành</a></li>
+                    <li class="nav-item px-4 fw-bold"><a href="#" class="nav-link link-dark px-2">Sản Phẩm</a></li>
+                    <li class="nav-item px-4 fw-bold"><a href="#" class="nav-link link-dark px-2">Công Nghệ</a></li>
+                    <li class="nav-ite px-3">
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle btn-sm rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span><img class="align-text-top img-fluid" src="./images/flags/vn.png" alt="vn"></span>
+                                <span class="px-2 align-bottom">Vietnamese</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item mb-3 active" href="#"><img class="align-bottom img-fluid" src="./images/flags/vn-1.png" alt="vn"><small class="px-3">Vietnamese</small></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"><img class="align-bottom img-fluid" src="./images/flags/us-1.png" alt="us"><small class="px-3">English</small></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item contact"><a href="#" class="nav-link link-dark px-2 border border-warning text-warning rounded-pill text-center">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="mobile position-relative" style="display: none">
+        <div class="d-flex justify-content-between align-items-center">
+            <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvasMenu">
+                    <span class="menu" data-class="left">
+                        <span class="line"></span>
+                        <span class="line short"></span>
+                        <span class="line"></span>
+                    </span>
+            </a>
+            <a class="px-3" href="#"><img src="./images/logo.png" alt="logo" class="img-fluid"></a>
+            <div class="contact"><a href="#" class="px-4 py-2 rounded-pill text-center text-decoration-none">Liên Hệ</a></div>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasMenu">
+            <div class="offcanvas-header justify-content-start">
+                <a data-bs-dismiss="offcanvas" aria-label="Close" type="button">
+                        <span class="menu" data-class="left">
+                            <span class="line"></span>
+                            <span class="line short"></span>
+                            <span class="line"></span>
+                        </span>
+                </a>
+                <a class="px-5 mx-3" href="#"><img src="./images/logo.png" alt="logo" class="img-fluid"></a>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav d-flex flex-column mb-3">
+                    <li class="nav-item fw-bold"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Trang Chủ</a></li>
+                    <li class="nav-item fw-bold"><a href="#" class="nav-link link-dark px-2">Dịch Vụ</a></li>
+                    <li class="nav-item fw-bold"><a href="#" class="nav-link link-dark px-2">Dự Án Hoàn Thành</a></li>
+                    <li class="nav-item fw-bold"><a href="#" class="nav-link link-dark px-2">Sản Phẩm</a></li>
+                    <li class="nav-item fw-bold"><a href="#" class="nav-link link-dark px-2">Công Nghệ</a></li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle btn-sm rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span><img class="align-text-top img-fluid" src="./images/flags/vn.png" alt="vn"></span>
+                                <span class="px-2 align-bottom">Vietnamese</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item mb-3 active" href="#"><img class="align-bottom img-fluid" src="./images/flags/vn-1.png" alt="vn"><small class="px-3">Vietnamese</small></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"><img class="align-bottom img-fluid" src="./images/flags/us-1.png" alt="us"><small class="px-3">English</small></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</header>
+<section class="box-product">
+    <div class="container">
+        <nav aria-label="breadcrumb" class="py-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none"><span>Trang chủ</span></a></li>
+                <li class="breadcrumb-item active" aria-current="page"><span class="ms-3">Sản phẩm</span></li>
+            </ol>
+        </nav>
+        <div class="product-item">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/products/product-9.png" class="rounded-4" alt="product">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/products/product-9.png" class="rounded-4" alt="product">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/products/product-9.png" class="rounded-4" alt="product">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/products/product-9.png" class="rounded-4" alt="product">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/products/product-9.png" class="rounded-4" alt="product">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/products/product-9.png" class="rounded-4" alt="product">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/products/product-9.png" class="rounded-4" alt="product">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/products/product-9.png" class="rounded-4" alt="product">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                   <div class="w-75 m-auto mb-content">
+                       <h5 class="fw-bold lh-base">Thiết Bị lắng Lamella, Bể Lắng Lamen Xử Lý Nước Cấp & Nước Thải</h5>
+                       <p class="fs-5">
+                           <span>Giá bán:</span>
+                           <span class="text-danger fw-bold">Liên Hệ</span>
+                       </p>
+                       <p>
+                           – Đồng bộ cùng: Sàn thao tác, cầu thang, chân đỡ thiết bị<br>
+                           – Diện tích lắp đặt nhỏ gọn<br>
+                           – Nâng công suất dễ dàng<br>
+                           – Độ bền cao<br>
+                           – Quá trình hoạt động thu gọn, xử lý căn bùn dễ dàng.<br>
+                           – Phù hợp với nhiều hệ thống xử lý nước.<br>
+                       </p>
+                       <a href="#" class="btn text-white w-100 rounded-pill mt-3 mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button">Mua Ngay</a>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-jumbotron p-4 rounded-4 mb-5">
+            <h4 class="fw-bold">Mục lục</h4>
+            <div class="grid-item">
+                <span>1.GIỚI THIỆU THIẾT BỊ LẮNG LAMELLA</span>
+                <span style="grid-row: 2;">2.THÔNG SỐ KỸ THUẬT</span>
+                <span>3. MODEL THIẾT BỊ LẮNG</span>
+                <span>4. NGUYÊN LÝ HOẠT ĐỘNG</span>
+            </div>
+        </div>
+        <div class="product-content">
+            <h4>GIỚI THIỆU THIẾT BỊ LẮNG LAMELLA</h4>
+            <small>Thiết bị lắng Lamella (Bể lắng Lamen) do Công ty cổ phẩn Công nghệ Môi trường VTECH nghiên cứu và chế tạo mang lại hiệu quả cao, ưu điểm vượt trội so với công nghệ khác. Thiết bị được chế tạo, sản xuất bằng thép SS400 hoặc Inox 304, composite… với tấm lắng chuyên dụng bằng các loại vật liệu khác nhau, đáp ứng mọi yêu cầu về kích thước, công suất của khách hàng.</small>
+            <p><img src="./images/products/product-9.png" class="img-fluid" alt="product"></p>
+            <small class="d-block text-center mb-5">Thiết bị lắng lamella, bể lắng lamen</small>
+            <h4>NGUYÊN LÝ HOẠT ĐỘNG</h4>
+            <small>Thiết bị lắng Lamella hoạt động dựa trên sự kết hợp giữa hai vùng làm việc trong cùng một bể. Vùng keo tụ – kết bông và vùng lắng lớp mỏng. Nước đã kết bông được dẫn vào bể lắng và được phân phối đều khắp bề mặt qua dàn phân phối đặt trong thiết bị. Phần nước dâng lên theo module tấm lắng (tấm lắng lamella), phần bùn được lắng xuống đáy. Phần nước sạch dâng lên được đưa ra ngoài theo hệ thống máng thu. Phần bùn lắng dưới đáy được xả ra ngoài theo định kỳ qua ống xả bùn.</small>
+        </div>
+        <div class="product-related mb-5">
+            <h2 class="border-bottom pb-2 w-25 position-relative fs-4">SẢN PHẨM LIÊN QUAN</h2>
+            <div class="row g-4 pt-5 row-cols-1 row-cols-lg-4">
+                <div class="col mb-5">
+                    <div class="feature position-relative">
+                        <div class="intro">
+                            <a href="#"><img src="./images/products/product-1.png" class="w-100" alt="product"></a>
+                            <h3 class="fs-5 py-4 text-center">THIẾT BỊ LỌC NGƯỢC LIÊN TỤC TUẦN HOÀN CÁT</h3>
+                            <a href="#" class="d-flex justify-content-center align-items-center"><img src="./images/icons/icon-1.png" class="img-fluid" alt="icon"></a>
+                        </div>
+                        <div class="desc w-100 position-absolute text-center text-white d-flex justify-content-center align-items-center flex-column px-3 invisible">
+                            <h5 class="text-center mb-3">THIẾT BỊ LỌC NGƯỢC LIÊN TỤC TUẦN HOÀN CÁT</h5>
+                            <p class="lh-base">At Nordic Water, we are passionate about what we do. We know how important it is. Many people take clean water for granted and assume there is an unlimited supply available.</p>
+                            <a href="#" class="d-sm-flex justify-content-sm-center align-items-sm-center mt-3"><img src="./images/icons/icon-2.png" class="img-fluid" alt="icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="feature position-relative">
+                        <div class="intro">
+                            <a href="#"><img src="./images/products/product-1.png" class="w-100" alt="product"></a>
+                            <h3 class="fs-5 py-4 text-center">THIẾT BỊ LỌC NGƯỢC LIÊN TỤC TUẦN HOÀN CÁT</h3>
+                            <a href="#" class="d-flex justify-content-center align-items-center"><img src="./images/icons/icon-1.png" class="img-fluid" alt="icon"></a>
+                        </div>
+                        <div class="desc w-100 position-absolute text-center text-white d-flex justify-content-center align-items-center flex-column px-3 invisible">
+                            <h5 class="text-center mb-3">THIẾT BỊ LỌC NGƯỢC LIÊN TỤC TUẦN HOÀN CÁT</h5>
+                            <p class="lh-base">At Nordic Water, we are passionate about what we do. We know how important it is. Many people take clean water for granted and assume there is an unlimited supply available.</p>
+                            <a href="#" class="d-sm-flex justify-content-sm-center align-items-sm-center mt-3"><img src="./images/icons/icon-2.png" class="img-fluid" alt="icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="feature position-relative">
+                        <div class="intro">
+                            <a href="#"><img src="./images/products/product-1.png" class="w-100" alt="product"></a>
+                            <h3 class="fs-5 py-4 text-center">THIẾT BỊ LỌC NGƯỢC LIÊN TỤC TUẦN HOÀN CÁT</h3>
+                            <a href="#" class="d-flex justify-content-center align-items-center"><img src="./images/icons/icon-1.png" class="img-fluid" alt="icon"></a>
+                        </div>
+                        <div class="desc w-100 position-absolute text-center text-white d-flex justify-content-center align-items-center flex-column px-3 invisible">
+                            <h5 class="text-center mb-3">THIẾT BỊ LỌC NGƯỢC LIÊN TỤC TUẦN HOÀN CÁT</h5>
+                            <p class="lh-base">At Nordic Water, we are passionate about what we do. We know how important it is. Many people take clean water for granted and assume there is an unlimited supply available.</p>
+                            <a href="#" class="d-sm-flex justify-content-sm-center align-items-sm-center mt-3"><img src="./images/icons/icon-2.png" class="img-fluid" alt="icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="feature position-relative">
+                        <div class="intro">
+                            <a href="#"><img src="./images/products/product-1.png" class="w-100" alt="product"></a>
+                            <h3 class="fs-5 py-4 text-center">THIẾT BỊ LỌC NGƯỢC LIÊN TỤC TUẦN HOÀN CÁT</h3>
+                            <a href="#" class="d-flex justify-content-center align-items-center"><img src="./images/icons/icon-1.png" class="img-fluid" alt="icon"></a>
+                        </div>
+                        <div class="desc w-100 position-absolute text-center text-white d-flex justify-content-center align-items-center flex-column px-3 invisible">
+                            <h5 class="text-center mb-3">THIẾT BỊ LỌC NGƯỢC LIÊN TỤC TUẦN HOÀN CÁT</h5>
+                            <p class="lh-base">At Nordic Water, we are passionate about what we do. We know how important it is. Many people take clean water for granted and assume there is an unlimited supply available.</p>
+                            <a href="#" class="d-sm-flex justify-content-sm-center align-items-sm-center mt-3"><img src="./images/icons/icon-2.png" class="img-fluid" alt="icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="feature position-relative">
+                        <div class="intro">
+                            <a href="#"><img src="./images/products/product-1.png" class="w-100" alt="product"></a>
+                            <h3 class="fs-5 py-4 text-center">THIẾT BỊ LỌC NGƯỢC LIÊN TỤC TUẦN HOÀN CÁT</h3>
+                            <a href="#" class="d-flex justify-content-center align-items-center"><img src="./images/icons/icon-1.png" class="img-fluid" alt="icon"></a>
+                        </div>
+                        <div class="desc w-100 position-absolute text-center text-white d-flex justify-content-center align-items-center flex-column px-3 invisible">
+                            <h5 class="text-center mb-3">THIẾT BỊ LỌC NGƯỢC LIÊN TỤC TUẦN HOÀN CÁT</h5>
+                            <p class="lh-base">At Nordic Water, we are passionate about what we do. We know how important it is. Many people take clean water for granted and assume there is an unlimited supply available.</p>
+                            <a href="#" class="d-sm-flex justify-content-sm-center align-items-sm-center mt-3"><img src="./images/icons/icon-2.png" class="img-fluid" alt="icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-mixed">
+            <div class="row">
+                <div class="col-sm-6 mb-5">
+                    <h2 class="border-bottom pb-2 position-relative fs-4">Tin tức</h2>
+                    <div class="item rounded-4 mt-5">
+                        <div class="d-flex p-4">
+                            <div class="flex-shrink-0">
+                                <img src="./images/products/product-10.png" alt="product">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <p class="fw-bold">Tác hại của nước sinh hoạt ô nhiễm hữu cơ</p>
+                                <p class="text-muted">02/02/2021</p>
+                            </div>
+                        </div>
+                        <div class="d-flex p-4">
+                            <div class="flex-shrink-0">
+                                <img src="./images/products/product-10.png" alt="product">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <p class="fw-bold">Tác hại của nước sinh hoạt ô nhiễm hữu cơ</p>
+                                <p class="text-muted">02/02/2021</p>
+                            </div>
+                        </div>
+                        <div class="d-flex p-4">
+                            <div class="flex-shrink-0">
+                                <img src="./images/products/product-10.png" alt="product">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <p class="fw-bold">Tác hại của nước sinh hoạt ô nhiễm hữu cơ</p>
+                                <p class="text-muted">02/02/2021</p>
+                            </div>
+                        </div>
+                        <div class="d-flex p-4">
+                            <div class="flex-shrink-0">
+                                <img src="./images/products/product-10.png" alt="product">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <p class="fw-bold">Tác hại của nước sinh hoạt ô nhiễm hữu cơ</p>
+                                <p class="text-muted">02/02/2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="border-bottom pb-2 position-relative fs-4">Dự Án Hoàn Thành</h2>
+                    <div class="item rounded-4 mt-5">
+                        <div class="d-flex p-4">
+                            <div class="flex-shrink-0">
+                                <img src="./images/products/product-10.png" alt="product">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <p class="fw-bold">Tác hại của nước sinh hoạt ô nhiễm hữu cơ</p>
+                                <p class="text-muted">02/02/2021</p>
+                            </div>
+                        </div>
+                        <div class="d-flex p-4">
+                            <div class="flex-shrink-0">
+                                <img src="./images/products/product-10.png" alt="product">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <p class="fw-bold">Tác hại của nước sinh hoạt ô nhiễm hữu cơ</p>
+                                <p class="text-muted">02/02/2021</p>
+                            </div>
+                        </div>
+                        <div class="d-flex p-4">
+                            <div class="flex-shrink-0">
+                                <img src="./images/products/product-10.png" alt="product">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <p class="fw-bold">Tác hại của nước sinh hoạt ô nhiễm hữu cơ</p>
+                                <p class="text-muted">02/02/2021</p>
+                            </div>
+                        </div>
+                        <div class="d-flex p-4">
+                            <div class="flex-shrink-0">
+                                <img src="./images/products/product-10.png" alt="product">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <p class="fw-bold">Tác hại của nước sinh hoạt ô nhiễm hữu cơ</p>
+                                <p class="text-muted">02/02/2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <form class="form-booking">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title border-bottom m-auto text-center pb-2 position-relative" id="staticBackdropLabel">Thông Tin Đặt Mua Sản Phẩm</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" aria-describedby="name" placeholder="Họ và tên bạn" aria-label="">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" aria-describedby="address" placeholder="Địa chỉ" aria-label="">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" aria-describedby="phone" placeholder="Số điện thoại liên hệ" aria-label="">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="8" placeholder="Nội dung bạn quan tâm" aria-label=""></textarea>
+                    </div>
+                    <button type="submit" class="btn w-100 text-white mt-3 p-2">Gửi Yêu Cầu Tư Vấn</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    <section class="footer-top position-relative">
+        <div class="image position-relative"><img src="./images/footer/footer.png" class="w-100" alt="footer"></div>
+        <div class="description text-white text-center top-0 start-0 end-0 w-50 pt-5 mt-4">
+            <h4 class="fs-4">Gọi cho chúng tôi và hoàn thành công việc</h4>
+            <p class="lh-lg">Khi bạn thuê chúng tôi cho các dịch vụ xây dựng, bạn biết rằng bạn đang nhận được các chuyên gia có trình độ cao, những người có chuyên môn và kinh nghiệm để đảm bảo dự án của bạn được thực hiện đúng các chức năng.</p>
+            <a href="#" class="btn text-white">Gọi Cho Chúng Tôi Hôm Nay</a>
+        </div>
+    </section>
+    <section class="footer-bottom text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <br/>
+                    <img src="./images/footer/logo-footer.png" class="pt-5 pb-4" alt="logo-footer">
+                    <p class="lh-lg">Công ty cổ phần Công nghệ Môi trường Vtech Việt Nam - GPDKKD số: 0108818707 - Nơi cấp: Sở Kế hoạch & Đầu tư Hà Nội - Ngày cấp: 12/07/2019</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div><img src="./images/footer/footer-1.png" alt="footer-1"></div>
+                        <div><img src="./images/footer/footer-2.png" alt="footer-1"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <br/>
+                    <h5 class="pt-5 pb-3">THÔNG TIN LIÊN HỆ</h5>
+                    <p class="phone">
+                        <img src="./images/footer/call.png" alt="footer-phone" class="pe-2">
+                        <span>096.135.6686 </span>
+                    </p>
+                    <p class="email">
+                        <img src="./images/footer/footer-5.png" alt="footer-email" class="pe-2">
+                        <span>duocpham@xulinuocvtech.vn</span>
+                    </p>
+                    <p class="d-flex align-items-center">
+                        <span class="flex-shrink-0"><img src="./images/footer/footer-4.png" alt="footer-location" class="pe-2"></span>
+                        <span class="flex-grow-1 ms-2">VPGD: 12A24 HH2B KĐT Linh Đàm,P. Hoàng Liệt, Q. Hoàng Mai, TP. Hà Nội</span>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <br/>
+                    <h5 class="pt-5 pb-3">QUY CHẾ HOẠT ĐỘNG TMĐT</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0"><span class="d-inline-block bg-white rounded-circle mx-2" style="padding:2px"></span><span class="text-white">Quy chế hoạt động TMĐT</span></a></li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0"><span class="d-inline-block bg-white rounded-circle mx-2" style="padding:2px"></span><span class="text-white">Chính sách giao, chuyển hàng</span></a></li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0"><span class="d-inline-block bg-white rounded-circle mx-2" style="padding:2px"></span><span class="text-white">Chính sách đổi, trả hàng</span></a></li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0"><span class="d-inline-block bg-white rounded-circle mx-2" style="padding:2px"></span><span class="text-white">Chính sách bảo mật và Điều khoản</span></a></li>
+                        <li class="nav-item mb-3"><a href="#" class="nav-link p-0"><span class="d-inline-block bg-white rounded-circle mx-2" style="padding:2px"></span><span class="text-white">Hướng dẫn mua hàng, thanh toán</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="pt-3 mt-5 position-relative line-top">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                    <ul class="nav justify-content-end list-unstyled d-flex">
+                        <li class="ms-3"><a class="text-muted" href="#"><img src="./images/footer/zalo.png" alt="zalo"></a></li>
+                        <li class="ms-3"><a class="text-muted" href="#"><img src="./images/footer/fa.png" alt="facebook"></a></li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <span class="mb-3 mb-md-0 text-muted">Copyright 2020 VTECH EJC, All Right Reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<script src="./plugins/bootstrap@5.2.1/js/popper.min.js"></script>
+<script src="./plugins/bootstrap@5.2.1/js/bootstrap.min.js"></script>
+<script src="./plugins/jquery-3.6.1.min.js"></script>
+<script src="./plugins/swiper@8/swiper-bundle.min.js"></script>
+<script src="./jscript/swiper.js"></script>
+</body>
+</html>
