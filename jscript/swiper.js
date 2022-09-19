@@ -11,7 +11,7 @@ $(function () {
     });
     new Swiper('.home-complete-project .swiper', {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 15,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,

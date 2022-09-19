@@ -35,9 +35,9 @@
 }
 .home-slider .swiper-button-prev, .home-slider .swiper-button-next {
   width: 46px;
-  background: var(--color-9999);
+  background: #999999;
   padding: 20px;
-  border: 1px solid var(--color-9999);
+  border: 1px solid #999999;
   border-radius: 4px;
 }
 .home-slider .swiper-button-prev::after, .home-slider .swiper-button-next::after {
@@ -51,10 +51,10 @@
   color: #000;
   opacity: 1;
   background: none;
-  border: 2px solid var(--color-9999);
+  border: 2px solid #999999;
 }
 .home-slider .swiper-pagination-bullet-active {
-  background: var(--color-9999);
+  background: #999999;
   border: 2px solid var(--bs-white);
   position: relative;
 }
@@ -158,7 +158,7 @@
   color: #000;
   opacity: 1;
   background: none;
-  border: 1px solid var(--color-9999);
+  border: 1px solid #999999;
 }
 .home-complete-project .swiper-pagination-bullet-active {
   background: var(--bs-white);
@@ -215,6 +215,7 @@ footer {
   position: absolute;
   margin: auto;
   z-index: 2;
+  padding: 82px 0;
 }
 .footer-top .description a {
   background: var(--color-F5AA2E);
@@ -249,7 +250,7 @@ footer {
   left: 12px;
 }
 .mobile .line {
-  background-color: var(--color-444444);
+  background-color: #444444;
   border-radius: 2px;
   position: absolute;
   top: 0;
@@ -314,8 +315,19 @@ footer {
   footer .line-top ul { margin: 0 0 1rem; }
 }
 
-@media (min-width: 768px) { ... }
-
-@media (min-width: 992px) { ... }
-
-@media (min-width: 1200px) { ... }
+@media (max-width: 992px) {
+  .desktop { display: none; }
+  .mobile { display: block !important; }
+  .home-product h2 { width: 75% !important; }
+  .home-about-us { padding: 60px 0 0; }
+  .home-about-us .container { max-width: 100%; }
+  .home-about-us .description { display: unset !important; }
+  .home-about-us .contact-form { width: 100% !important; }
+  .home-complete-project { padding: 67px 0 }
+  .home-complete-project h2 { width: 75% !important; }
+  .home-complete-project .swiper .swiper-slide { height: 500px; }
+  .home-complete-project .swiper-button-prev { left: 32%; }
+  .home-complete-project .swiper-button-next { left: 62%; }
+  footer .line-top .align-items-center { align-items: unset; }
+}
+@media (min-width: 1200px) {}

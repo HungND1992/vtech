@@ -43,7 +43,7 @@
             </nav>
         </div>
     </section>
-    <section class="mobile position-relative" style="display: none">
+    <section class="mobile position-relative shadow" style="display: none">
         <div class="d-flex justify-content-between align-items-center">
             <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvasMenu">
                     <span class="menu" data-class="left">
@@ -68,7 +68,7 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="nav d-flex flex-column mb-3">
-                    <li class="nav-item fw-bold"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Trang Chủ</a></li>
+                    <li class="nav-item fw-bold"><a href="index.html" class="nav-link link-dark px-2 active" aria-current="page">Trang Chủ</a></li>
                     <li class="nav-item fw-bold"><a href="#" class="nav-link link-dark px-2">Dịch Vụ</a></li>
                     <li class="nav-item fw-bold"><a href="#" class="nav-link link-dark px-2">Dự Án Hoàn Thành</a></li>
                     <li class="nav-item fw-bold"><a href="#" class="nav-link link-dark px-2">Sản Phẩm</a></li>
@@ -176,8 +176,8 @@
             <small>Thiết bị lắng Lamella hoạt động dựa trên sự kết hợp giữa hai vùng làm việc trong cùng một bể. Vùng keo tụ – kết bông và vùng lắng lớp mỏng. Nước đã kết bông được dẫn vào bể lắng và được phân phối đều khắp bề mặt qua dàn phân phối đặt trong thiết bị. Phần nước dâng lên theo module tấm lắng (tấm lắng lamella), phần bùn được lắng xuống đáy. Phần nước sạch dâng lên được đưa ra ngoài theo hệ thống máng thu. Phần bùn lắng dưới đáy được xả ra ngoài theo định kỳ qua ống xả bùn.</small>
         </div>
         <div class="product-related mb-5">
-            <h2 class="border-bottom pb-2 w-25 position-relative fs-4">SẢN PHẨM LIÊN QUAN</h2>
-            <div class="row g-4 pt-5 row-cols-1 row-cols-lg-4">
+            <h2 class="border-bottom pb-2 w-50 position-relative fs-4">SẢN PHẨM LIÊN QUAN</h2>
+            <div class="row g-4 pt-5 row-cols-4 row-cols-lg-4">
                 <div class="col mb-5">
                     <div class="feature position-relative">
                         <div class="intro">
@@ -339,11 +339,11 @@
     </div>
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <form class="form-booking">
-                <div class="modal-content">
+            <form class="form-booking position-relative">
+                <div class="modal-content p-2">
                 <div class="modal-header">
                     <h4 class="modal-title border-bottom m-auto text-center pb-2 position-relative" id="staticBackdropLabel">Thông Tin Đặt Mua Sản Phẩm</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <a href="#" type="button" class="position-absolute rounded-circle btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></a>
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
@@ -352,17 +352,32 @@
                     <div class="mb-3">
                         <input type="text" class="form-control" aria-describedby="address" placeholder="Địa chỉ" aria-label="">
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-4">
                         <input type="text" class="form-control" aria-describedby="phone" placeholder="Số điện thoại liên hệ" aria-label="">
                     </div>
-                    <div class="mb-3">
-                        <textarea class="form-control" rows="8" placeholder="Nội dung bạn quan tâm" aria-label=""></textarea>
+                    <div class="mb-4">
+                        <div class="grid-container d-flex justify-content-between align-items-center">
+                            <div class="flex-shrink-0">
+                                <img src="./images/products/product-11.png" alt="product">
+                            </div>
+                            <div class="flex-grow-1 ms-2">
+                                <span>Thiết bị lắng Lamella, Bể Lắng Lamen xử lý nước cấp & nước thải</span>
+                            </div>
+                            <div class="flex-grow-1 ms-2">
+                                <div class="quantity">
+                                    <button type="button" title="Down" class="sub">Down</button>
+                                    <input type="number" name="quantity" value="1" pattern="[0-9]+" aria-label="quantity">
+                                    <button type="button" title="Up" class="add">Up</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button type="submit" class="btn w-100 text-white mt-3 p-2">Gửi Yêu Cầu Tư Vấn</button>
+                    <div>
+                        <textarea class="form-control" rows="8" placeholder="Ghi chú đơn hàng" aria-label=""></textarea>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+                    <button type="button" class="btn w-100">Đặt Hàng Ngay</button>
                 </div>
             </div>
             </form>
@@ -372,7 +387,7 @@
 <footer>
     <section class="footer-top position-relative">
         <div class="image position-relative"><img src="./images/footer/footer.png" class="w-100" alt="footer"></div>
-        <div class="description text-white text-center top-0 start-0 end-0 w-50 pt-5 mt-4">
+        <div class="description text-white text-center top-0 start-0 end-0 w-75">
             <h4 class="fs-4">Gọi cho chúng tôi và hoàn thành công việc</h4>
             <p class="lh-lg">Khi bạn thuê chúng tôi cho các dịch vụ xây dựng, bạn biết rằng bạn đang nhận được các chuyên gia có trình độ cao, những người có chuyên môn và kinh nghiệm để đảm bảo dự án của bạn được thực hiện đúng các chức năng.</p>
             <a href="#" class="btn text-white">Gọi Cho Chúng Tôi Hôm Nay</a>
@@ -381,7 +396,7 @@
     <section class="footer-bottom text-white">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-md-6">
                     <br/>
                     <img src="./images/footer/logo-footer.png" class="pt-5 pb-4" alt="logo-footer">
                     <p class="lh-lg">Công ty cổ phần Công nghệ Môi trường Vtech Việt Nam - GPDKKD số: 0108818707 - Nơi cấp: Sở Kế hoạch & Đầu tư Hà Nội - Ngày cấp: 12/07/2019</p>
@@ -390,7 +405,7 @@
                         <div><img src="./images/footer/footer-2.png" alt="footer-1"></div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-md-6">
                     <br/>
                     <h5 class="pt-5 pb-3">THÔNG TIN LIÊN HỆ</h5>
                     <p class="phone">
@@ -406,7 +421,7 @@
                         <span class="flex-grow-1 ms-2">VPGD: 12A24 HH2B KĐT Linh Đàm,P. Hoàng Liệt, Q. Hoàng Mai, TP. Hà Nội</span>
                     </p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-md-6">
                     <br/>
                     <h5 class="pt-5 pb-3">QUY CHẾ HOẠT ĐỘNG TMĐT</h5>
                     <ul class="nav flex-column">
@@ -420,7 +435,7 @@
             </div>
         </div>
         <br>
-        <div class="pt-3 mt-5 position-relative line-top">
+        <div class="pt-3 mt-5 position-relative line-top pb-2">
             <div class="container">
                 <div class="d-flex flex-wrap justify-content-between align-items-center">
                     <ul class="nav justify-content-end list-unstyled d-flex">

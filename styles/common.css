@@ -1,10 +1,8 @@
 :root {
   --color-F5AA2E: #F5AA2E;
-  --color-9999: #999999;
   --color-0086AA: #0086AA;
   --color-002833: #002833;
-  --color-F1F2F3: #F1F2F3;
-  --color-444444: #444444;
+  --color-828282: #828282;
 }
 
 .breadcrumb-item > a {
