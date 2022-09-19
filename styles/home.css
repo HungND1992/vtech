@@ -309,7 +309,7 @@ footer {
   }
   .home-complete-project .swiper { display: none; }
   .home-complete-project .mb-content { display: block !important; }
-  footer .description { padding: 0 20px 0 !important; }
+  footer .description { padding: 25px 20px 0 !important; }
   footer .line-top { margin: 0 !important; }
   footer .line-top .justify-content-between { justify-content: center !important; }
   footer .line-top ul { margin: 0 0 1rem; }
@@ -319,12 +319,13 @@ footer {
   .desktop { display: none; }
   .mobile { display: block !important; }
   .home-product h2 { width: 75% !important; }
+  .home-product .row-cols-1 > *, .home-service .row-cols-1 > * { width: 25% !important; }
   .home-about-us { padding: 60px 0 0; }
   .home-about-us .container { max-width: 100%; }
   .home-about-us .description { display: unset !important; }
   .home-about-us .contact-form { width: 100% !important; }
   .home-complete-project { padding: 67px 0 }
-  .home-complete-project h2 { width: 75% !important; }
+  .home-complete-project h2, .home-service h2 { width: 75% !important; }
   .home-complete-project .swiper .swiper-slide { height: 500px; }
   .home-complete-project .swiper-button-prev { left: 32%; }
   .home-complete-project .swiper-button-next { left: 62%; }
