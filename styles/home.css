@@ -314,6 +314,9 @@ footer {
   footer .line-top .justify-content-between { justify-content: center !important; }
   footer .line-top ul { margin: 0 0 1rem; }
 }
+@media (max-width: 768px) {
+  .footer-bottom .col-sm-4 { flex: 50% !important;}
+}
 @media (max-width: 992px) {
   .desktop { display: none; }
   .mobile { display: block !important; }
