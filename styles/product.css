@@ -224,7 +224,9 @@
 @media (max-width: 992px) {
   .desktop { display: none; }
   .mobile { display: block !important; }
-  .product-related .row-cols-1 > * { width: 25% !important; }
   footer .line-top .align-items-center { align-items: unset; }
+}
+@media (min-width: 768px) {
+  .product-related .row-cols-1 > * { width: 25% !important; }
 }
 @media (min-width: 1200px) {}

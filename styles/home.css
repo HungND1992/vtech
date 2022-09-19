@@ -314,12 +314,10 @@ footer {
   footer .line-top .justify-content-between { justify-content: center !important; }
   footer .line-top ul { margin: 0 0 1rem; }
 }
-
 @media (max-width: 992px) {
   .desktop { display: none; }
   .mobile { display: block !important; }
   .home-product h2 { width: 75% !important; }
-  .home-product .row-cols-1 > *, .home-service .row-cols-1 > * { width: 25% !important; }
   .home-about-us { padding: 60px 0 0; }
   .home-about-us .container { max-width: 100%; }
   .home-about-us .description { display: unset !important; }
@@ -330,5 +328,8 @@ footer {
   .home-complete-project .swiper-button-prev { left: 32%; }
   .home-complete-project .swiper-button-next { left: 62%; }
   footer .line-top .align-items-center { align-items: unset; }
+}
+@media (min-width: 768px) {
+  .home-product .row-cols-1 > *, .home-service .row-cols-1 > * { width: 25% !important; }
 }
 @media (min-width: 1200px) {}
